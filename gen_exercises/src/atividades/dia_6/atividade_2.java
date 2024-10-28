@@ -21,6 +21,6 @@ public class atividade_2 {
 
 		media = ((nota1 + nota2 + nota3 + nota4) / 4);
 
-		System.out.printf("Sua média final é: %.1f", media);
+		System.out.printf("\nSua média final é: %.1f", media);
 	}
 }

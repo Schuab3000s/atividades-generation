@@ -18,6 +18,6 @@ public class atividade_1 {
 
 		novoSalario = (salario + abono);
 
-		System.out.println("Novo Salário: " + novoSalario);
+		System.out.printf("\nNovo Salário: %.2f", novoSalario);
 	}
 }
