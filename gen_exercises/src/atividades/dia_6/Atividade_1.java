@@ -2,7 +2,7 @@ package atividades.dia_6;
 
 import java.util.Scanner;
 
-public class atividade_1 {
+public class Atividade_1 {
 	public static void main(String[] args) {
 
 		float salario, abono, novoSalario;

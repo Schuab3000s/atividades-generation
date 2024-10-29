@@ -2,7 +2,7 @@ package atividades.dia_6;
 
 import java.util.Scanner;
 
-public class atividade_4 {
+public class Atividade_4 {
 	public static void main(String[] args) {
 
 		float num1, num2, num3, num4, resultado;
