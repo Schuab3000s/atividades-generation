@@ -1,8 +1,8 @@
-package atividades.dia_6;
+package atividadesGen.dia_6;
 
 import java.util.Scanner;
 
-public class Atividade_4 {
+public class Atividade4 {
 	public static void main(String[] args) {
 
 		float num1, num2, num3, num4, resultado;
@@ -18,9 +18,9 @@ public class Atividade_4 {
 		System.out.println("Digite o número 4: ");
 		num4 = entrada.nextFloat();
 		entrada.close();
-		
-		resultado = ((num1*num2)-(num3*num4));
-		
-		System.out.println("\nO resultado da diferença do produto entre o n1 e n2 pelo produto entre o n3 e o n4 é: "+ resultado);
+
+		resultado = ((num1 * num2) - (num3 * num4));
+
+		System.out.println("\nO resultado da diferença do produto entre o n1 e n2 pelo produto entre o n3 e o n4 é: " + resultado);
 	}
 }

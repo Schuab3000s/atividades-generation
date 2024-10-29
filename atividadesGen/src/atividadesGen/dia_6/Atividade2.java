@@ -1,8 +1,8 @@
-package atividades.dia_6;
+package atividadesGen.dia_6;
 
 import java.util.Scanner;
 
-public class Atividade_2 {
+public class Atividade2 {
 	public static void main(String[] args) {
 
 		float nota1, nota2, nota3, nota4, media;

@@ -1,8 +1,8 @@
-package atividades.dia_6;
+package atividadesGen.dia_6;
 
 import java.util.Scanner;
 
-public class Atividade_3 {
+public class Atividade3 {
 	public static void main(String[] args) {
 
 		float salarioBruto, addNoturno, hrsExtras, desconto, salarioLiquido;
