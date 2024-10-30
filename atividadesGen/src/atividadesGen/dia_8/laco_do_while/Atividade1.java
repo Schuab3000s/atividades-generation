@@ -14,7 +14,7 @@ public class Atividade1 {
 			numero = entrada.nextInt();
 
 			if (numero > 0) {
-				somaNumPositivo = somaNumPositivo + numero;
+				somaNumPositivo += numero;
 			}
 		} while (numero != 0);
 

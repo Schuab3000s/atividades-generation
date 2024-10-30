@@ -11,11 +11,11 @@ public class Atividade2 {
 		int homemCisTransMobileMais40 = 0;
 		int naoBinarioFullStackMenor30 = 0;
 		double media = 0;
-		String continuar = "s";
+		char continuar = 's';
 
 		Scanner entrada = new Scanner(System.in);
 
-		while (continuar.equalsIgnoreCase("s")) {
+		while (continuar == 's') {
 			System.out.println("Qual sua idade: ");
 			idade = entrada.nextInt();
 			System.out.println("");
@@ -45,7 +45,7 @@ public class Atividade2 {
 			if ((genero == 1 || genero == 4) && area == 2) {
 				mulherCisTransFront++;
 			}
-			if ((genero == 2 || genero == 5) && area == 3) {
+			if ((genero == 2 || genero == 5) && area == 3 && idade>40) {
 				homemCisTransMobileMais40++;
 			}
 			if (genero == 3 && area == 4 && idade < 30) {
@@ -53,16 +53,16 @@ public class Atividade2 {
 			}
 
 			totalPessoa++;
-			media = (media+idade);
+			media = (media + idade);
 
 			System.out.println("Deseja continuar? (s/n)");
-			continuar = entrada.next();
+			continuar = entrada.next().charAt(0);
 		}
 		System.out.println("Total de pessoas desenvolvedoras Backend: " + numPessoaBack);
 		System.out.println("Total de Mulheres Cis e Trans desenvolvedoras Frontend: " + mulherCisTransFront);
 		System.out.println("Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: " + homemCisTransMobileMais40);
 		System.out.println("Total de Pessoas Não Binárias desenvolvedoras FullStack menores de 30 anos: " + naoBinarioFullStackMenor30);
 		System.out.println("O número total de pessoas que responderam à pesquisa: " + totalPessoa);
-		System.out.printf("A média de idade das pessoas que responderam à pesquisa: %.2f", (media/totalPessoa));
+		System.out.printf("A média de idade das pessoas que responderam à pesquisa: %.2f", (media / totalPessoa));
 	}
 }
