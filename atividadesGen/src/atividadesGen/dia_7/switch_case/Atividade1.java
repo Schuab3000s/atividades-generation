@@ -21,37 +21,44 @@ public class Atividade1 {
 
 		System.out.println("\nEscolha uma opção:");
 		opcao = entrada.nextInt();
-		System.out.println("Qaul a quantidade que você levará?");
-		quantidade = entrada.nextInt();
-		entrada.close();
+		
+		if (opcao >= 1 && opcao <= 6) {
+			
+			System.out.println("Qaul a quantidade que você levará?");
+			quantidade = entrada.nextInt();
+			entrada.close();
 
-		switch (opcao) {
-		case 1:
-			produto = "Cachorro Quente";
-			total = quantidade * 10;
-			break;
-		case 2:
-			produto = "X-Salada";
-			total = quantidade * 15;
-			break;
-		case 3:
-			produto = "X-Bacon";
-			total = quantidade * 18;
-			break;
-		case 4:
-			produto = "Bauru";
-			total = quantidade * 12;
-			break;
-		case 5:
-			produto = "Refrigerante";
-			total = quantidade * 8;
-			break;
-		case 6:
-			produto = "Suco de Laranja";
-			total = quantidade * 13;
-			break;
+			switch (opcao) {
+			case 1:
+				produto = "Cachorro Quente";
+				total = quantidade * 10;
+				break;
+			case 2:
+				produto = "X-Salada";
+				total = quantidade * 15;
+				break;
+			case 3:
+				produto = "X-Bacon";
+				total = quantidade * 18;
+				break;
+			case 4:
+				produto = "Bauru";
+				total = quantidade * 12;
+				break;
+			case 5:
+				produto = "Refrigerante";
+				total = quantidade * 8;
+				break;
+			case 6:
+				produto = "Suco de Laranja";
+				total = quantidade * 13;
+				break;
+			}
+			System.out.println("\nProduto: " + produto);
+			System.out.println("Valor Total: R$" + total + ",00");
+			
+		} else {
+			System.out.println("Opção inválida");
 		}
-		System.out.println("\nProduto: " + produto);
-		System.out.println("Valor Total: R$" + total + ",00");
 	}
 }
