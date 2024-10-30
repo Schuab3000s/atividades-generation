@@ -20,12 +20,12 @@ public class Atividade3 {
 		primeiraDoacao = entrada.nextBoolean();
 		entrada.close();
 
-		if (idade > 60 && idade < 69 && primeiraDoacao == false) {
-			System.out.println(nome + " está apto(a) para doar sangue!");
-		} else if (idade > 60 && idade < 69 && primeiraDoacao == true) {
-			System.out.println(nome + " está não apto(a) para doar sangue!");
-		} else if (idade > 18) {
-			System.out.println(nome + " está apto(a) para doar sangue!");
+		if (idade > 18 && idade < 69) {
+			if (idade > 60 && primeiraDoacao) {
+				System.out.println(nome + " está não apto(a) para doar sangue!");
+			} else {
+				System.out.println(nome + " está apto(a) para doar sangue!");
+			}
 		} else {
 			System.out.println(nome + " está não apto(a) para doar sangue!");
 		}
