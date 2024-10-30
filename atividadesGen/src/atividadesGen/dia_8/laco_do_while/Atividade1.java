@@ -1,4 +1,4 @@
-package atividadesGen.dia_8laco_do_while;
+package atividadesGen.dia_8.laco_do_while;
 
 import java.util.Scanner;
 

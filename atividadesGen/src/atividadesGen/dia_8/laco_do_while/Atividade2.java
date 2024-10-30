@@ -1,4 +1,4 @@
-package atividadesGen.dia_8laco_do_while;
+package atividadesGen.dia_8.laco_do_while;
 
 import java.util.Scanner;
 
@@ -20,9 +20,9 @@ public class Atividade2 {
 				quantidade++;
 			}
 		} while (numero != 0);
-		
+
 		media = (soma / quantidade);
-		
+
 		System.out.printf("A média de todos os números múltiplos de 3 é: %.2f", media);
 	}
 }
