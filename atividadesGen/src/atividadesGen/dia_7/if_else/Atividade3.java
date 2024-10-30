@@ -18,6 +18,7 @@ public class Atividade3 {
 		idade = entrada.nextInt();
 		System.out.println("Primeira doação de sangue?(true or false)");
 		primeiraDoacao = entrada.nextBoolean();
+		entrada.close();
 
 		if (idade > 60 && idade < 69 && primeiraDoacao == false) {
 			System.out.println(nome + " está apto(a) para doar sangue!");
