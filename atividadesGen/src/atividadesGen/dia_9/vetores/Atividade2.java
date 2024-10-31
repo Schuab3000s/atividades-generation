@@ -14,12 +14,12 @@ public class Atividade2 {
 		for (int i = 0; i < numeros.length; i++) {
 			System.out.println("Digite o " + (i + 1) + "° número: ");
 			numeros[i] = entrada.nextInt();
-			entrada.close();
 			soma += numeros[i];
 		}
-		media = (soma / numeros.length);
+		entrada.close();
+		media = (soma * 1.0f / numeros.length);
 
-		System.out.println("Elementos nos índices ímpares: ");
+		System.out.println("\nElementos nos índices ímpares: ");
 		for (int i = 1; i < numeros.length; i += 2) {
 			System.out.print(numeros[i] + " ");
 		}
