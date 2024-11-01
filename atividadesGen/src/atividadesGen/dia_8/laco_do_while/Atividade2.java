@@ -20,6 +20,7 @@ public class Atividade2 {
 				quantidade++;
 			}
 		} while (numero != 0);
+		entrada.close();
 
 		media = (soma / quantidade);
 

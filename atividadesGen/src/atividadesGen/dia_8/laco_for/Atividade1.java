@@ -14,6 +14,7 @@ public class Atividade1 {
 		System.out.println("Digite o segundo número do intervalo: ");
 		num2 = entrada.nextInt();
 		System.out.println("");
+		entrada.close();
 
 		if (num1 < num2) {
 			for (num1++; num1 < num2; num1++) {

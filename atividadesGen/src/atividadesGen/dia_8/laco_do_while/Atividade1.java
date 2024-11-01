@@ -17,6 +17,7 @@ public class Atividade1 {
 				somaNumPositivo += numero;
 			}
 		} while (numero != 0);
+		entrada.close();
 
 		System.out.println("A soma dos números positivos é: " + somaNumPositivo);
 	}

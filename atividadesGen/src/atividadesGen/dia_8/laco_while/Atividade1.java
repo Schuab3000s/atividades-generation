@@ -20,6 +20,8 @@ public class Atividade1 {
 				maior50++;
 			}
 		}
+		entrada.close();
+		
 		System.out.println("\nTotal de pessoas menores de 21 anos: " + menor21);
 		System.out.println("Total de pessoas maior de 50 anos: " + maior50);
 	}

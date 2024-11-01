@@ -58,6 +58,8 @@ public class Atividade2 {
 			System.out.println("Deseja continuar? (s/n)");
 			continuar = entrada.next().charAt(0);
 		}
+		entrada.close();
+		
 		System.out.println("Total de pessoas desenvolvedoras Backend: " + numPessoaBack);
 		System.out.println("Total de Mulheres Cis e Trans desenvolvedoras Frontend: " + mulherCisTransFront);
 		System.out.println("Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: " + homemCisTransMobileMais40);
