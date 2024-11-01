@@ -16,10 +16,8 @@ public class Atividade1 {
 		System.out.println("Digite 10 números, por gentileza: (sem ser repetidos)");
 		for (int i = 0; i < 10; i++) {
 
-			System.out.println((i + 1) + "° número: ");
-			int numero = entrada.nextInt();
-
-			numeros.add(numero);
+			System.out.println((i + 1) + "° número: ");			
+			numeros.add(entrada.nextInt());
 		}
 		entrada.close();
 		

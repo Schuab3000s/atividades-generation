@@ -42,7 +42,5 @@ public class Atividade2 {
 		entrada.close();
 
 		System.out.println("Programa finalizado!!");
-
 	}
-
 }
