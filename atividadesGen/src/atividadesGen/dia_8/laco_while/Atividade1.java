@@ -8,11 +8,13 @@ public class Atividade1 {
 
 		Scanner entrada = new Scanner(System.in);
 
-		while (!(idade < 0)) {
+		while (true) {
 			System.out.println("Digite uma idade: ");
 			idade = entrada.nextInt();
 
-			if (idade < 21 && idade>0) {
+			if (idade < 0) {
+				break;
+			} else if (idade < 21) {
 				menor21++;
 			} else if (idade > 50) {
 				maior50++;
