@@ -12,13 +12,13 @@ public class Atividade2 {
 		Scanner entrada = new Scanner(System.in);
 
 		for (int i = 0; i < matriz.length; i++) {
-			
+
 			System.out.println("Digite a nota do " + (i + 1) + "° aluno: ");
-			
+
 			for (int j = 0; j < matriz[4].length; j++) {
-				
+
 				System.out.println("Nota do " + (j + 1) + "° Bimestre: ");
-				
+
 				matriz[i][j] = entrada.nextDouble();
 				media += (matriz[i][j] / 4);
 			}
@@ -26,7 +26,7 @@ public class Atividade2 {
 			media = 0;
 		}
 		entrada.close();
-		
+
 		System.out.println("A média dos alunos são: ");
 		for (double medias : vetMedia) {
 			System.out.printf(" | %.1f", medias);
