@@ -11,7 +11,7 @@ public class Atividade1 {
 		Queue<String> fila = new LinkedList<String>();
 		Scanner entrada = new Scanner(System.in);
 
-		char continuar = 's';
+		boolean continuar = true;
 		byte opcao;
 
 		do {
@@ -44,7 +44,7 @@ public class Atividade1 {
 
 			case 0:
 				System.out.println("\nSaindo do sistema...");
-				continuar = 'n';
+				continuar = false;
 				entrada.close();
 				break;
 
@@ -53,7 +53,7 @@ public class Atividade1 {
 				break;
 			}
 
-		} while (continuar == 's');
+		} while (continuar);
 		System.out.println("\nSistema finalizado!");
 	}
 
