@@ -35,5 +35,4 @@ public class Menu {
 		
 		return opcao;
 	}
-
 }
