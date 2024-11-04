@@ -24,11 +24,11 @@ public class Atividade2 {
 
 			System.out.println("Qual a opção desejada?");
 			opcao = entrada.nextByte();
-			entrada.nextLine();
-
+			
 			switch (opcao) {
 			case 1:
 				System.out.println("\nDigite o nome do livro:");
+				entrada.skip("\\R?");
 				pilha.add(entrada.nextLine());
 
 				System.out.println("\nLivro adicionado na pilha!");

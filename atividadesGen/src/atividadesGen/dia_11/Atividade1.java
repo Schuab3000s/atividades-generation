@@ -25,11 +25,11 @@ public class Atividade1 {
 
 			System.out.println("Qual a opção desejada?");
 			opcao = entrada.nextByte();
-			entrada.nextLine();
 
 			switch (opcao) {
 			case 1:
 				System.out.println("\nDigite o nome do cliente:");
+				entrada.skip("\\R?");
 				fila.add(entrada.nextLine());
 
 				System.out.println("\nCliente adicionado na fila!");
