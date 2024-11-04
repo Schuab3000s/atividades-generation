@@ -1,6 +1,5 @@
 package atividadesGen.dia_11;
 
-import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
