@@ -17,7 +17,6 @@ public class Atividade1 {
 		byte opcao;
 
 		do {
-
 			opcao = menu.menuPrincial(fila);
 
 			switch (opcao) {
@@ -47,8 +46,8 @@ public class Atividade1 {
 				System.out.println("\nOpção inválida!");
 				break;
 			}
-
 		} while (continuar);
+
 		System.out.println("\nSistema finalizado!");
 	}
 }

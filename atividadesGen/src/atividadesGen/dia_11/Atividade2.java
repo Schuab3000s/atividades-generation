@@ -8,7 +8,6 @@ public class Atividade2 {
 	public static void main(String[] args) {
 
 		Stack<String> pilha = new Stack<String>();
-
 		Scanner entrada = new Scanner(System.in);
 		Listagem listagem = new Listagem();
 		Menu menu = new Menu();
@@ -48,6 +47,7 @@ public class Atividade2 {
 			}
 
 		} while (continuar);
+
 		System.out.println("\nSistema finalizado!");
 	}
 }
