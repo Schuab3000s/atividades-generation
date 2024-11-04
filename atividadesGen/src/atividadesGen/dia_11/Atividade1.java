@@ -10,6 +10,7 @@ public class Atividade1 {
 
 		Queue<String> fila = new LinkedList<String>();
 		Scanner entrada = new Scanner(System.in);
+		Listagem listagem = new Listagem();
 
 		boolean continuar = true;
 		byte opcao;
@@ -36,11 +37,11 @@ public class Atividade1 {
 				break;
 
 			case 2:
-				listagem(fila, opcao);
+				listagem.listar(fila, opcao);
 				break;
 
 			case 3:
-				listagem(fila, opcao);
+				listagem.listar(fila, opcao);
 				break;
 
 			case 0:
@@ -56,28 +57,5 @@ public class Atividade1 {
 
 		} while (continuar);
 		System.out.println("\nSistema finalizado!");
-	}
-
-	private static void listagem(Queue<String> fila, byte opcao) {
-
-		if (!fila.isEmpty()) {
-			if (opcao == 3) {
-				fila.remove();
-			}
-
-			System.out.println("\n-----------LISTA------------");
-
-			if (!fila.isEmpty()) {
-				for (String cliente : fila) {
-					System.out.println(cliente);
-				}
-			} else {
-				System.out.println("O último cliente saiu da fila");
-			}
-
-			System.out.println("----------------------------\n");
-		} else {
-			System.out.println("\nFila vazia...");
-		}
 	}
 }

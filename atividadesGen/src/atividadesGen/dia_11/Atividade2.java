@@ -10,6 +10,7 @@ public class Atividade2 {
 		Stack<String> pilha = new Stack<String>();
 
 		Scanner entrada = new Scanner(System.in);
+		Listagem listagem = new Listagem();
 
 		byte opcao;
 		boolean continuar = true;
@@ -24,7 +25,7 @@ public class Atividade2 {
 
 			System.out.println("Qual a opção desejada?");
 			opcao = entrada.nextByte();
-			
+
 			switch (opcao) {
 			case 1:
 				System.out.println("\nDigite o nome do livro:");
@@ -35,11 +36,11 @@ public class Atividade2 {
 				break;
 
 			case 2:
-				listagem(pilha, opcao);
+				listagem.listar(pilha, opcao);
 				break;
 
 			case 3:
-				listagem(pilha, opcao);
+				listagem.listar(pilha, opcao);
 				break;
 
 			case 0:
@@ -55,28 +56,5 @@ public class Atividade2 {
 
 		} while (continuar);
 		System.out.println("\nSistema finalizado!");
-	}
-
-	private static void listagem(Stack<String> pilha, byte opcao) {
-
-		if (!pilha.isEmpty()) {
-			if (opcao == 3) {
-				pilha.pop();
-			}
-
-			System.out.println("\n-----------PILHA------------");
-
-			if (!pilha.isEmpty()) {
-				for (String livro : pilha) {
-					System.out.println(livro);
-				}
-			} else {
-				System.out.println("A pilha de livros acabou!");
-			}
-
-			System.out.println("----------------------------\n");
-		} else {
-			System.out.println("\nPilha vazia...");
-		}
-	}
+	}	
 }
