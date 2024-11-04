@@ -11,20 +11,13 @@ public class Atividade2 {
 
 		Scanner entrada = new Scanner(System.in);
 		Listagem listagem = new Listagem();
+		Menu menu = new Menu();
 
 		byte opcao;
 		boolean continuar = true;
 
 		do {
-			System.out.println("\n|-------------MENU--------------|");
-			System.out.println("| 1 - Adicionar livro na pilha  |");
-			System.out.println("| 2 - Listar todos os livros    |");
-			System.out.println("| 3 - Retirar livro da fila     |");
-			System.out.println("| 0 - Sair                      |");
-			System.out.println("|_______________________________|");
-
-			System.out.println("Qual a opção desejada?");
-			opcao = entrada.nextByte();
+			opcao = menu.menuPrincial(pilha);
 
 			switch (opcao) {
 			case 1:
@@ -56,5 +49,5 @@ public class Atividade2 {
 
 		} while (continuar);
 		System.out.println("\nSistema finalizado!");
-	}	
+	}
 }

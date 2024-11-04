@@ -11,21 +11,14 @@ public class Atividade1 {
 		Queue<String> fila = new LinkedList<String>();
 		Scanner entrada = new Scanner(System.in);
 		Listagem listagem = new Listagem();
+		Menu menu = new Menu();
 
 		boolean continuar = true;
 		byte opcao;
 
 		do {
 
-			System.out.println("\n|-------------MENU--------------|");
-			System.out.println("| 1 - Adicionar cliente na fila |");
-			System.out.println("| 2 - Listar todos os clientes  |");
-			System.out.println("| 3 - Retirar cliente da fila   |");
-			System.out.println("| 0 - Sair                      |");
-			System.out.println("|_______________________________|");
-
-			System.out.println("Qual a opção desejada?");
-			opcao = entrada.nextByte();
+			opcao = menu.menuPrincial(fila);
 
 			switch (opcao) {
 			case 1:
