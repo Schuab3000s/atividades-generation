@@ -21,14 +21,10 @@ public class Atividade08 {
 		int faixa = idade / 10;
 
 		switch (faixa) {
-		case 0:
-		case 1:
+		case 0,1:
 			classificacao = (idade <= 12) ? "Criança" : "Adolescente";
 			break;
-		case 2:
-		case 3:
-		case 4:
-		case 5:
+		case 2,3,4,5:
 			classificacao = "Adulto";
 			break;
 		default:
